@@ -96,22 +96,77 @@
       <!-- end Education -->
       {% endif %}
 
+      
+      {% if site.resume_section_awards %}
+      <!-- begin Awards -->
+      <section class="content-section">
 
-      {% if site.resume_section_projects %}
+        <header class="section-header">
+          <h2>Honors and Awards(Selected)</h2>
+        </header>
+        {% for award in site.data.awards %}
+        <div class="resume-item">
+          <h4 class="resume-item-details">{{ award.name }}
+              <p class="resume-item-right">{{ award.year }}</p></h4>
+          <p class="resume-item-copy">{{ award.description }}</p>
+        </div>
+        {% endfor %}
+
+      </section>
+      <!-- end Skills -->
+      {% endif %}
+
+      {% if site.resume_section_publications %}
       <!-- begin Projects -->
       <section class="content-section">
         <header class="section-header">
-          <h2>Projects</h2>
+          <h2>Publications</h2>
         </header>
 
-        {% for project in site.data.projects %}
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
-          <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4>
-          <p class="resume-item-copy">{{ project.description }}</p>
-        </div>
+        <ul>
+        {% for publication in site.data.publications %}
+        <li><div class="resume-item">
+          <p class="resume-item-copy">{{ publication.description }}</p>
+        </div></li>
         {% endfor %}
+        </ul>
+      </section>
+      <!-- end Projects -->
+      {% endif %}
+
+      {% if site.resume_section_presentations %}
+      <!-- begin Projects -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Conference Presentations</h2>
+        </header>
+
+        <ul>
+        {% for presentation in site.data.presentations %}
+        <li><div class="resume-item">
+          <p class="resume-item-copy">{{ presentation.description }}</p>
+        </div></li>
+        {% endfor %}
+        </ul>
+
+      </section>
+      <!-- end Projects -->
+      {% endif %}
+
+      {% if site.resume_section_patents %}
+      <!-- begin Projects -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Patents</h2>
+        </header>
+
+        <ul>
+        {% for patent in site.data.patents %}
+        <li><div class="resume-item">
+          <p class="resume-item-copy">{{ patent.description }}</p>
+        </div></li>
+        {% endfor %}
+        </ul>
 
       </section>
       <!-- end Projects -->
@@ -134,25 +189,7 @@
       </section>
       <!-- end Skills -->
       {% endif %}
-      
-      {% if site.resume_section_awards %}
-      <!-- begin Awards -->
-      <section class="content-section">
 
-        <header class="section-header">
-          <h2>Honors and Awards(Selected)</h2>
-        </header>
-        {% for award in site.data.awards %}
-        <div class="resume-item">
-          <h4 class="resume-item-details">{{ award.name }}
-              <p class="resume-item-right">{{ award.year }}</p></h4>
-          <p class="resume-item-copy">{{ award.description }}</p>
-        </div>
-        {% endfor %}
-
-      </section>
-      <!-- end Skills -->
-      {% endif %}
 
       {% if site.resume_section_recognition %}
       <!-- begin Recognition -->
@@ -194,20 +231,22 @@
       <!-- end Associations -->
       {% endif %}
 
-      {% if site.resume_section_interests %}
+      {% if site.resume_section_activities %}
       <!-- begin Interests -->
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Outside Interests</h2>
+          <h2>Other Curricular Activities</h2>
         </header>
 
         <div class="resume-item">
-          <ul class="resume-item-list">
-            {% for interest in site.data.interests %}
-            <li>{{ interest.description }}</li>
+            {% for activity in site.data.activities %}
+        <div class="resume-item">
+          <h4 class="resume-item-details">{{ activity.name }}
+              <p class="resume-item-right">{{ activity.year }}</p></h4>
+          <p class="resume-item-copy">{{ activity.description }}</p>
+        </div>
             {% endfor %}
-          </ul>
         </div>
 
       </section>
