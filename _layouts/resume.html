@@ -32,7 +32,7 @@
           <h2 class="header-title" itemprop="jobTitle">{{ site.resume_title }}</h2>
 
           <!-- This is the markup for the icon links; moved out to an include because it's very verbose, and you shouldn't ever need to edit the markup (unless you want to re-order the icons); if you want to customize which links appear, define them in the _config.yml file -->
-          <!-- {% include icon-links.html %} -->
+          {% include icon-links.html %}
         </div>
 
         <div class="executive-summary" itemprop="description">
@@ -128,6 +128,25 @@
         <div class="resume-item">
           <h4 class="resume-item-details">{{ skill.skill }}</h4>
           <p class="resume-item-copy">{{ skill.description }}</p>
+        </div>
+        {% endfor %}
+
+      </section>
+      <!-- end Skills -->
+      {% endif %}
+      
+      {% if site.resume_section_awards %}
+      <!-- begin Awards -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Honors and Awards(Selected)</h2>
+        </header>
+        {% for award in site.data.awards %}
+        <div class="resume-item">
+          <h4 class="resume-item-details">{{ award.name }}
+              <p class="resume-item-right">{{ award.year }}</p></h4>
+          <p class="resume-item-copy">{{ award.description }}</p>
         </div>
         {% endfor %}
 
