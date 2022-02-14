@@ -11,7 +11,7 @@ sass:
 # Resume settings
 resume_avatar:                  "true"
 resume_name:                    "Jaeyong Hwang"
-resume_title:                   "Jaeyong Hwang Resume"
+resume_title:                   "<b>About me</b>"
 
 # used for the contact button in _layouts/resume.html
 resume_contact_email:           "wo7516@kaist.ac.kr"
@@ -24,7 +24,7 @@ resume_header_contact_info:     "742 Evergreen Terrace, Springfield • 555-7334
 display_header_contact_info:    "false"
 
 #resume_header_intro: "<p>This is the executive summary. You should write a few brief, concise, and meaningful sentences about yourself from a professional context, and your immediate career goals. Make the length appropriate for your needs, but keep it brief and concise</p>"
-resume_header_intro: "Undergraduate student, Physics Korea Advanced Institute of Science and Technology (KAIST)<br><b>Research Interests</b> <ul class=\"resume-item-list\"><li>Constructing qubit system via superconductor-based or Rydberg atom array cavity</li><li>Implementation of Quantum Algorithm</li><li>Quantum Machine Learning</li></ul> e-mail: wo7516 at kaist.ac.kr<br>Check out CV here"
+resume_header_intro: "Undergraduate, Physics<br><b>Korea Advanced Institute of Science and Technology (KAIST)</b><br><br><b>Research Interests</b> <ul class=\"resume-item-list\"><li>Constructing qubit system via superconductor-based or Rydberg atom array cavity</li><li>Implementation of Quantum Algorithm</li><li>Quantum Machine Learning</li></ul> e-mail: wo7516 at kaist.ac.kr<br>Check out CV here"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
@@ -34,8 +34,8 @@ resume_looking_for_work:        "yes"
 
 # Decide which sections to use
 # comment out to hide
-resume_section_experience:      true
 resume_section_education:       true
+resume_section_experience:      true
 resume_section_awards:          true
 resume_section_publications:    true
 resume_section_presentations:   true
