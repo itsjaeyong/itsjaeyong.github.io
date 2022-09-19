@@ -1,9 +1,12 @@
 # Skills (Skills)
 # 1
-- skill: Programming Languages
-  description: MATLAB, Qiskit, Python, C/C++, LaTex
+- skill: Computer
+  description: MATLAB & Simulink, Python, C/C++, Qiskit, LTspice, Geogebra, Illustrator, etc.
 
 # 2
 - skill: Languages
   description: Korean (native), English (fluent)
-
+  
+# 3
+- skill: Hobby
+  description: professional at Table Tennis. Like listening to music.
