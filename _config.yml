@@ -24,7 +24,7 @@ resume_header_contact_info:     "742 Evergreen Terrace, Springfield • 555-7334
 display_header_contact_info:    "false"
 
 #resume_header_intro: "<p>This is the executive summary. You should write a few brief, concise, and meaningful sentences about yourself from a professional context, and your immediate career goals. Make the length appropriate for your needs, but keep it brief and concise</p>"
-resume_header_intro: "B.S. candidate, Physics<br><b>Korea Advanced Institute of Science and Technology (KAIST)</b><br><br><b>Research Interests</b> <ul class=\"resume-item-list\"><li>Realization of quantum algorithm and fault-tolerant quantum computing</li><li>Quantum Optics</li><li>Quantum Machine Learning</li></ul> e-mail: wo7516 at kaist.ac.kr"
+resume_header_intro: "B.S. candidate, Physics<br><b>Korea Advanced Institute of Science and Technology (KAIST)</b><br><br><b>Research Interests</b> <ul class=\"resume-item-list\"><li>Atom-Light Interaction</li><li>Neutral Atom Quantum Computing</li><li>Quantum Algorihtm and Quantum Simulation</li><li>Quantum Optics</li></ul> e-mail: wo7516 at kaist.ac.kr"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
